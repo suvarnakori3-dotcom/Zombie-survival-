@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Chase Survival - Ultimate Edition</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HUD -->
+    <div id="hud">
+
+        <div class="hud-box">
+            ❤️ Health:
+            <span id="health">100</span>
+        </div>
+
+        <div class="hud-box">
+            🏆 Score:
+            <span id="score">0</span>
+        </div>
+
+        <div class="hud-box">
+            🥇 High Score:
+            <span id="highScore">0</span>
+        </div>
+
+        <div class="hud-box">
+            💰 Coins:
+            <span id="coins">0</span>
+        </div>
+
+        <div class="hud-box">
+            🌊 Wave:
+            <span id="wave">1</span>
+        </div>
+
+        <div class="hud-box">
+            🔫 Weapon:
+            <span id="weaponLevel">1</span>
+        </div>
+
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen">
+
+        <h1>ZOMBIE CHASE SURVIVAL</h1>
+
+        <p>
+            Survive endless waves of zombies,
+            collect coins, upgrade weapons,
+            and beat your high score.
+        </p>
+
+        <button id="startBtn">
+            START GAME
+        </button>
+
+    </div>
+
+    <!-- Pause Screen -->
+    <div id="pauseScreen">
+
+        <h1>GAME PAUSED</h1>
+
+        <button id="resumeBtn">
+            RESUME
+        </button>
+
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameOverScreen">
+
+        <h1>GAME OVER</h1>
+
+        <p>
+            Final Score:
+            <span id="finalScore">0</span>
+        </p>
+
+        <p>
+            High Score:
+            <span id="finalHighScore">0</span>
+        </p>
+
+        <button id="restartBtn">
+            PLAY AGAIN
+        </button>
+
+    </div>
+
+    <!-- Upgrade Shop -->
+    <div id="shop">
+
+        <h2>Upgrade Shop</h2>
+
+        <button id="upgradeWeaponBtn">
+            Upgrade Weapon
+            (50 Coins)
+        </button>
+
+        <button id="healBtn">
+            Heal +20 HP
+            (20 Coins)
+        </button>
+
+    </div>
+
+    <!-- Canvas -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Mobile Controls -->
+    <div id="mobileControls">
+
+        <button id="upBtn">⬆</button>
+
+        <div class="row">
+
+            <button id="leftBtn">⬅</button>
+
+            <button id="downBtn">⬇</button>
+
+            <button id="rightBtn">➡</button>
+
+        </div>
+
+    </div>
+
+    <!-- Shoot Button -->
+    <button id="shootBtn">
+        🔫
+    </button>
+
+    <!-- Action Buttons -->
+    <div id="gameActions">
+
+        <button id="pauseBtn">
+            ⏸ Pause
+        </button>
+
+        <button id="shopBtn">
+            🛒 Shop
+        </button>
+
+    </div>
+
+    <!-- Audio -->
+    <audio id="shootSound">
+        <source src="shoot.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="hitSound">
+        <source src="hit.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="coinSound">
+        <source src="coin.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
